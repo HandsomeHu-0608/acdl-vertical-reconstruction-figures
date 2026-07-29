@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this figure code or plotting data, please cite the associated ES&T manuscript."
+title: "Vertical reconstruction of aerosol extinction: ES&T figure code and plotting data"
+type: software
+license: MIT
+version: "1.0.0"
+date-released: 2026-07-29

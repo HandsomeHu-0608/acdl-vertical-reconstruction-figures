@@ -1,10 +1,10 @@
-# Transformer-Based Aerosol Vertical Reconstruction: Figure Code and Plotting Data
+# LightGBM-Based Aerosol Vertical Reconstruction: Figure Code and Plotting Data
 
-This repository provides Python plotting code and drawing-ready NetCDF data for reproducing five figure groups from an ACDL-constrained, Transformer-based aerosol vertical reconstruction study.
+This repository provides Python plotting code and drawing-ready NetCDF data for reproducing five figure groups from a DQ-1/ACDL-constrained, LightGBM-based study of aerosol vertical reconstruction in WRF-Chem.
 
-The reconstruction framework uses a vertical-column Transformer to represent relationships across atmospheric layers. In the figures, `noCorr` denotes the uncorrected WRF-Chem fields, `Corr` denotes the corrected fields, and `ACDL` denotes the satellite lidar reference.
+The reconstruction framework trains a single LightGBM estimator across valid model levels. Altitude, adjacent-layer extinction, column-integrated extinction, meteorological conditions, and aerosol composition provide vertical and environmental context. The predicted extinction is converted into height-dependent scaling factors that update prognostic aerosol species in the WRF-Chem initial fields. In the figures, `noCorr` denotes the uncorrected WRF-Chem fields, `Corr` denotes the corrected fields, and `ACDL` denotes the satellite lidar reference.
 
-This package supports figure reproduction only. It does not include raw DQ-1/ACDL observations, WRF-Chem input files, model training code, trained checkpoints, GIS shapefiles, or original DEM files.
+This package is intended only for figure reproduction. It does not include raw DQ-1/ACDL observations, WRF-Chem input files, model-training code, trained models, GIS shapefiles, or original DEM files.
 
 ## Reproduce
 

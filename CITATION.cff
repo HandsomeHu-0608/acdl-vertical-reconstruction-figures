@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this figure code or plotting data, please cite the associated aerosol reconstruction manuscript."
+title: "DQ-1/ACDL Lidar-Constrained Reconstruction of Aerosol 3D Structure in WRF-Chem Using Machine Learning: Figure Code and Plotting Data"
+type: software
+license: MIT
+version: "1.0.1"
+date-released: 2026-09-29
